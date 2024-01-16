@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a professional website for Luke Smith, a Univeristy of Texas at Austin gradutate with a degree in Management Information Systems and certification in Data Analytics and Visualization.">
     <title>Luke Smith - Personal Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 <!--Navbar-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 p fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">Luke Smith</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -34,69 +35,126 @@
         </div>
     </nav>
 
-    <header class="bg-dark" id="header">
-        <div class="container bg-warning text-dark">
-            <div class="d-flex align-items-center justify-content-between">
-                <img class="img-fluid" src="Images/main.png" alt="Luke Smith">
-                <p class="lead p-5">
-                    Welcome to my personal website! I am a University of Texas at Austin grad with a degree in Management Information Systems 
-                    from the Red McCombs School of Business.
+    <header class="bg-dark p-5" id="header">
+        <div class="container bg-warning text-dark rounded">
+            <div class="d-flex align-items-center justify-content-between p-2">
+                <img class="img-fluid" src="Resources/main.png" alt="Luke Smith">
+                <p class="lead p-4">
+                    Welcome to my personal website! I am a passionate data and IT professional
+                    with years of technical services, implementation, and project management 
+                    experience.<br><br>
+                    <!--
+                        I'm deeply interested in data science and analytics and have gained
+                    a certificate in Data Analytics and Visualization from the the University of
+                    Texas at Austin as well as a specialization in Machine Learning from DeepLearning.AI.<br>
+                    -->
+                    I've created this website using HTML, CSS, and Bootstrap to showcase my skills, experience, and projects.
+                    I hope you enjoy!
                 </p>
             </div>
         </div>
     </header>
 
     <!-- About Section -->
-    <section class="bg-dark text-light py-5" id="about">
+    <section class="p-5 text-center bg-dark text-light" id="about">
+        <h1 class="mb-4">About Me</h1>
         <div class="container">
-            <div class="d-flex">
-                <div>
-                    <h1 class="text-center">About Me</h1>
-                    <p class="lead">
-                        I spent the first three and a half years of my career in technical services at Iodine Software, a
-                        machine learning healthcare company based in Austin, Texas. I started out as a Client Success Analyst, working with internal and
-                        external stakeholders to efficiently resolve software related issues as they popped up. I distinguished myself by quickly
-                        becoming familiar with Iodine's data environment and DB schema and used SQL to identify the root causes of client reported issues.
-                        I also showed strong communications skills with end users, managers, and internal client success and engineering team members
-                        to efficiently resolve these problems.<br><br>
-                        My ability to solve technical problems and communicate effectively with stakeholders earned
-                        me a promotion to Implementation Manager where I became responsible for leading hospital IT teams through our 16-week 
-                        implementation process. I handled three to five projects at any given time, integrating and validating millions of medical
-                        data points and working with client and internal team members to problem solve when limitations arose. In this role I gained
-                        invaluable data and project management experience that has made me confident in my ability to work with complex datasets on
-                        any team kind of team.<br><br>
-                        My time at Iodine exposed me to the amazing power and potential of big data and machine learning. I thoroughly enjoyed building my
-                        technical and PM skills within the technical services team, but I always felt drawn to understanding how we used the vast stores of
-                        client data to create the models at the core of our software. During my tenure at Iodine I delved deeper than required into our data
-                        science operations to understand the types of models we used, including neural networks and decision trees, how to indentify model 
-                        inputs like NLP concepts and medical data points, and how to interpret model output and the associated effects on our products.
-                        Ultimately I realized that I wanted to explore a career in data science and analytics and would need to enhance my skillset to do so.
-                        At such an early stage in my career I decided to leave my comfortable situation and enroll in a Data Analytics and Visualization
-                        bootcamp at UT Austin in order to kickstart this new career. I supplemented this course with a specialization in machine learning 
-                        from DeepLearning.AI through Coursera as well.<br><br>
-                        I'm proud of the work I have put in to build new skills that will propel me into a new career. I've created this website to showcase
-                        the projects I've been able to complete, including the site itself! Please continue down to the "Skills" section and see the "Projects"
-                        tab to learn more!
-                    </p>
+            <div class="row text-center g-3">
+                <div class="col-md">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body">
+                            <i class="h1 bi bi-mortarboard-fill"></i>
+                            <h3 class="card-title">Education</h3>
+                            <div class="card-text text-start ">
+                                <p>
+                                    Degree in Management Information Systems
+                                    from the Univeristy of Texas at Austin
+                                </p>
+                                
+                                <p>
+                                    <a href="https://techbootcamps.utexas.edu/data/landing/" class="text-light" target="_blank">
+                                        Certificate in Data Analytics and Visualization
+                                    </a>
+                                    from the Univeristy of Texas at Austin
+                                </p>
+                                <p>
+                                    <a href="https://www.coursera.org/specializations/machine-learning-introduction" class="text-light" target="_blank">
+                                        Specialization in Machine Learning
+                                    </a>
+                                    from DeepLearning.AI
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body">
+                            <i class="h1 bi bi-person-fill"></i>
+                            <h3 class="card-title">Interests</h3>
+                            <div class="card-text text-start ">
+                                <p>
+                                    I grew up in the Bay Area and love the Golden State Warriors, San Francisco 49ers, and San Francisco Giants.
+                                </p>
+                                <p>
+                                    I like to stay active by playing basketball, tennis, and golf
+                                </p>
+                                <p>
+                                    I also love to read, especially historical fiction, memoirs, and non-fiction. My favorite author
+                                    is Jon Krakauer!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div class="row text-center pt-3">
+                <div class="col-md">
+                    <div class="card bg-primary text-light">
+                        <div class="card-body">
+                            <i class="h1 bi bi-pc-display"></i>
+                            <h3 class="card-title">Career</h3>
+                            <div class="card-text text-start ">
+                                <p>
+                                    I have nearly four years of experience at Iodine Software on the Technical Services Team
+                                </p>
+                                <p>
+                                    I began my career as a Client Success Analyst, working with software users and internal
+                                    team members to efficiently solve technical issues
+                                </p>
+                                <p>
+                                    Later I was promoted to Implementation Manager, where I led technical projects focused on
+                                    large-scale data integration and application configuration.
+                                </p>
+                                <p>
+                                    My experience at Iodine Software has given me a diverse and well-rounded skillset. I have proven experience 
+                                    in stakeholder management, cross-team communication, and project management, as well as a strong technical
+                                    background using SQL, Python, Java, and Git to excel in complex data environments and schemas.
+                                </p>
+                                <p>
+                                    Use the button below to download my resume and learn more!
+                                </p>
+                                <a href="Resources/luke_smith_resume.pdf" class="btn btn-warning" target="_blank">Resume (PDF)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+           
+
         </div>
     </section>
 
-    <!-- Services Section (Optional) -->
-    <section id="services">
+    <!-- Projects Section -->
+    <section id="projects">
         <div class="container">
-            <h2>Services</h2>
-            <ul>
-                <li>Web Development</li>
-                <li>UI/UX Design</li>
-                <!-- Add more services as needed -->
-            </ul>
+            
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio">
+    <!-- Skills Section -->
+    <section id="skills">
         <div class="container">
             <h2>Portfolio</h2>
             <!-- Add portfolio items, such as images and project descriptions -->
